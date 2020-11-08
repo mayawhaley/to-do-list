@@ -21,6 +21,7 @@ h1{
     outline: none;
     width: 250px;
     height: 30px;
+    font-size: 20px;
 }
 
 #addText{
@@ -32,11 +33,31 @@ h1{
 }
 
 .toDo{
-    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    /* order: 5; */
+    /* align-items: ; */
+    position: absolute;
+    bottom: 120px;
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
 }
 
-.paragraph{
+.paragraph-style{
     margin: 0;
     cursor: pointer;
     font-size: 20px;
+    background-color: red;
+    /* line-break: after;  */
 }
+
+.paragraph-style:nth-child(1n){
+    line-break: after;    
+  }
