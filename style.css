@@ -1,23 +1,35 @@
 /* style.css */
-
+*{
+    box-sizing: border-box;
+    margin-top: 25px;
+    
+    
+}
+body{
+    background: #424650;
+}
 h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 120px;
+    color: #DBA38B;
 }
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 500px;
+    width: 400px;
     height: 500px;
-    background: gray;
+    background: #828591;
+    box-shadow:10px 10px 5px; 
 }
 
 #inputField{
     border-radius: 30px;
-    border-width: 1px;
+    border-width: 0px;
     outline: none;
     width: 250px;
     height: 30px;
@@ -29,35 +41,28 @@ h1{
     width: 50px;
     margin-left: 25px;
     border-radius: 30px;
-    border-width: 1px;
+    border-width: 0px;
+    outline: none;
+    color: #DBA38B;
+    background-color: #CDD7E8;
 }
 
-.toDo{
+.toDo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-around;
-    /* order: 5; */
-    /* align-items: ; */
     position: absolute;
-    bottom: 120px;
-    width: 400px;
+    bottom: 170px;
+    width: 350px;
     height: 200px;
-    background-color: blue;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    margin-top: 25px;
     
 }
 
 .paragraph-style{
-    margin: 0;
+    margin: 5px;
     cursor: pointer;
     font-size: 20px;
-    background-color: red;
-    /* line-break: after;  */
+    break-after: always;   
 }
-
-.paragraph-style:nth-child(1n){
-    line-break: after;    
-  }
