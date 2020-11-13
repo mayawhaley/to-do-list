@@ -8,6 +8,7 @@ function toggleButton() {
     var element = document.body;
     element.classList.toggle("light-mode");
 }
+
 // creates new element as paragraph when button is pushed
 addButton.addEventListener('click', function () {
     var paragraph = document.createElement('p');
@@ -22,10 +23,14 @@ addButton.addEventListener('click', function () {
         toDoContainer.removeChild(toDoContainer)
     })
 
-
     paragraph.addEventListener('dblclick', function () {
         toDoContainer.removeChild(paragraph)
     })
 })
 
+inputField.addEventListener("keyup", function (e) {
+    if (e.code === 'Enter') {
+        addButton.click();
+    }
+});
 
