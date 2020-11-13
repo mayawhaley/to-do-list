@@ -1,9 +1,13 @@
 // app.js
 
-let addButton = document.querySelector('#addText')
-let toDoContainer = document.querySelector('#toDoContainer')
-let inputField = document.querySelector('#inputField')
+let addButton = document.querySelector('.addTextButton')
+let toDoContainer = document.querySelector('.toDoContainer')
+let inputField = document.querySelector('.inputField')
 
+function toggleButton() {
+    var element = document.body;
+    element.classList.toggle("light-mode");
+}
 // creates new element as paragraph when button is pushed
 addButton.addEventListener('click', function () {
     var paragraph = document.createElement('p');
@@ -23,3 +27,5 @@ addButton.addEventListener('click', function () {
         toDoContainer.removeChild(paragraph)
     })
 })
+
+

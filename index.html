@@ -6,14 +6,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
     <title>To-Do List</title>
 </head>
 
 <body>
+    <!-- Rounded switch -->
+
+    <div class="toggle">
+        <label class="switch">
+            <input onClick="toggleButton()" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+
     <div class="container">
+
         <h1>To Do List</h1>
-        <input id="inputField" type="text"> <button id="addText"> + </button>
-        <div class="toDo" id="toDoContainer"></div>
+        <input class="inputField" type="text"> <button class="addTextButton"> + </button>
+        <div class="toDoContainer"></div>
     </div>
     <script src="app.js"></script>
 </body>
